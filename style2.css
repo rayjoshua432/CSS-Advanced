@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.main .parent {
+    background-color: aqua;
+    height: 700px;
+    width: 500px;
+
+    position: relative;
+}
+
+.main .parent .child-1 {
+    background-color: rgb(25, 209, 148);
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main .parent .child-2 {
+    background-color: rgb(17, 148, 255);
+    height: 200px;
+    width: 200px;
+}
+
+/* Positions 
+
+Static - not affected by the top,bottom, left, and right properties.
+
+Relative - positioned relative to its normal position.
+
+Absolute - positioned relative to the nearest positioned ancestor
+
+Fixed - positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+
+Sticky - positioned based on the user's scroll position.
+*/
